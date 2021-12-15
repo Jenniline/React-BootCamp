@@ -31,13 +31,23 @@ console.log(numbersResult)
 
 let studentMarks = [1,2,3,4,5]
 
+let mapFunction = studentMarks.map(function (mark) {
+    return studentMarks.push(0)
+})
+
+console.log(mapFunction);
+
+
 // let newMarksWithMap = studentMarks.map(n => n + 5)
 let newMarksWithMap = studentMarks.map(n => n + 5);
 
 
 let newMarksWithForeach = studentMarks.forEach(n => n + 5)
 
-console.log
+
+console.log(newMarksWithMap);
+console.log(newMarksWithForeach);
+
 
 
 
