@@ -56,12 +56,32 @@ let moreStudentMarks = [10,21,14,4,5]
 
 let marksGreaterThanTen = moreStudentMarks.filter(mark => mark > 0)
 
-let marksGreaterThanTenWithMap = moreStudentMarks.map(mark => mark > 10 ? marksGreaterThanTenWithMap : '')
+    // let marksGreaterThanTenWithMap = moreStudentMarks.map(mark => mark > 10 ? marksGreaterThanTenWithMap : '')
 
-console.log(marksGreaterThanTenWithMap)
+// console.log(marksGreaterThanTenWithMap)
 
+let manyStudentMarks = [10,20,14,30,40,50,14]
+let mark = manyStudentMarks.find(number => number == 14)
+let marks = manyStudentMarks.filter(numberr => numberr > 14)
 
+console.log(mark)
+console.log(marks)
 
+let newMark = manyStudentMarks.findIndex(mark => mark > 10)
+console.log(studentMarks[newMark]);
+
+let manyMoreStudentMarks = [10,20,3,4,8,0]
+
+let markS = manyMoreStudentMarks.filter(numberi => numberi < 10)
+console.log(markS)
+
+let total = 0;
+let totalLessThanTen = markS.map( mark => total += mark);
+console.log(total);
+
+let count = 0;
+manyMoreStudentMarks.forEach((mark) => mark < 10 && (count += mark) )
+console.log(count);
 
 
 
