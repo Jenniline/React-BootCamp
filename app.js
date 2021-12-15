@@ -48,7 +48,17 @@ let newMarksWithForeach = studentMarks.forEach(n => n + 5)
 console.log(newMarksWithMap);
 console.log(newMarksWithForeach);
 
+// Filter in JavaScript
 
+let moreStudentMarks = [10,21,14,4,5]
+
+// Find all marks greater than 10
+
+let marksGreaterThanTen = moreStudentMarks.filter(mark => mark > 0)
+
+let marksGreaterThanTenWithMap = moreStudentMarks.map(mark => mark > 10 ? marksGreaterThanTenWithMap : '')
+
+console.log(marksGreaterThanTenWithMap)
 
 
 
